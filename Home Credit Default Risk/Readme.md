@@ -37,6 +37,8 @@ This dashboard provides a **360° view of portfolio health**, highlights potenti
 │ ├── 4_Risk.py # Risk segmentation
 ├── practice.ipynb # Practice notebook for testing analysis
 └── README.md # Project documentation
+
+
 📊 Dataset
 
 The dataset is not uploaded directly due to size.
@@ -47,11 +49,11 @@ Update the Drive link inside load_data() if you want to replace with your own da
 
 🎯 Main Goals
 
-Detect default patterns.
+- Detect default patterns.
 
-Identify high-risk borrower groups.
+- Identify high-risk borrower groups.
 
-Evaluate data quality issues.
+- Evaluate data quality issues.
 
 Support credit policy and decision-making.
 
