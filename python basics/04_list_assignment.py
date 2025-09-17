@@ -1,0 +1,365 @@
+# LIST DATATYPE ASSIGNMENT - 50 QUESTIONS
+# ======================================
+
+# SOLVED EXAMPLE
+# --------------
+# Question: Find the maximum and minimum values in a list
+print("SOLVED EXAMPLE:")
+print("Find the maximum and minimum values in a list")
+numbers = [23, 45, 12, 67, 34, 89, 56]
+max_val = max(numbers)
+min_val = min(numbers)
+print(f"List: {numbers}")
+print(f"Maximum: {max_val}")
+print(f"Minimum: {min_val}")
+print("-" * 50)
+
+# ASSIGNMENT QUESTIONS (50 QUESTIONS)
+# ==================================
+
+# Question 1: Create a list of first 10 square numbers
+print("Question 1: Create a list of first 10 square numbers")
+N=10
+squares=[]
+for i in range(1,N+1):
+    squares.append(i*i)
+print(squares)
+
+
+# Question 2: Find the sum of all even numbers in [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+print("\nQuestion 2: Find the sum of all even numbers in [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]")
+N=[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+even_sum=sum(num for num in N if num % 2 == 0 )
+print(even_sum)
+
+# Question 3: Remove duplicates from [1, 2, 2, 3, 4, 4, 5, 6, 6, 7]
+print("\nQuestion 3: Remove duplicates from [1, 2, 2, 3, 4, 4, 5, 6, 6, 7]")
+N=[1, 2, 2, 3, 4, 4, 5, 6, 6, 7]
+duplicates=[]
+for i in N:
+    if i not in duplicates:
+        duplicates.append(i)
+print(duplicates)
+
+
+# Question 4: Sort the list [64, 34, 25, 12, 22, 11, 90] in descending order
+print("\nQuestion 4: Sort the list [64, 34, 25, 12, 22, 11, 90] in descending order")
+N=[64, 34, 25, 12, 22, 11, 90] 
+N.sort(reverse=True)
+print(N)
+
+# Question 5: Find the average of numbers in [15, 23, 31, 42, 56, 78, 91]
+print("\nQuestion 5: Find the average of numbers in [15, 23, 31, 42, 56, 78, 91]")
+N=[15, 23, 31, 42, 56, 78, 91]
+M=sum(N)/len(N)
+print(M)
+
+# Question 6: Create a list of first 15 Fibonacci numbers
+print("\nQuestion 6: Create a list of first 15 Fibonacci numbers")
+
+
+# Question 7: Find the second largest number in [45, 67, 23, 89, 12, 34, 78]
+print("\nQuestion 7: Find the second largest number in [45, 67, 23, 89, 12, 34, 78]")
+N=[45, 67, 23, 89, 12, 34, 78]
+N.sort()
+print(N[-2])
+
+# Question 8: Reverse the list [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+print("\nQuestion 8: Reverse the list [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]")
+N=[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+N.reverse()
+print(N)
+
+# Question 9: Count how many times 5 appears in [1, 5, 2, 5, 3, 5, 4, 5, 6]
+print("\nQuestion 9: Count how many times 5 appears in [1, 5, 2, 5, 3, 5, 4, 5, 6]")
+N=[1, 5, 2, 5, 3, 5, 4, 5, 6]
+M=N.count(5)
+print(M)
+
+# Question 10: Create a list of prime numbers between 1 and 50
+print("\nQuestion 10: Create a list of prime numbers between 1 and 50")
+N=list(range(2,51))
+M=[2]
+for i in N:
+    if i%i and i!=0:
+        M.append(i)
+print(i)
+
+# Question 11: Flatten nested list [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+print("\nQuestion 11: Flatten nested list [[1, 2, 3], [4, 5, 6], [7, 8, 9]]")
+N=[[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+flatten=[]
+for item in N:
+    for i in item:
+        flatten.append(i)
+print(flatten)
+        
+
+# Question 12: Find common elements between [1, 2, 3, 4, 5] and [4, 5, 6, 7, 8]
+print("\nQuestion 12: Find common elements between [1, 2, 3, 4, 5] and [4, 5, 6, 7, 8]")
+N=[1, 2, 3, 4, 5]
+M=[4, 5, 6, 7, 8]
+common=[]
+for item in N:
+    if item in M and item not in common:
+        common.append(item) 
+print(common)
+
+# Question 13: Create a list of lists: [[1, 2], [3, 4], [5, 6]]
+print("\nQuestion 13: Create a list of lists: [[1, 2], [3, 4], [5, 6]]")
+N=[[1, 2], [3, 4], [5, 6]]
+print(N)
+
+# Question 14: Find the sum of each sublist in [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+print("\nQuestion 14: Find the sum of each sublist in [[1, 2, 3], [4, 5, 6], [7, 8, 9]]")
+N=[[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+sublist=[]
+for item in N:
+    total=0
+    for i in item:
+        total+=i
+        sublist.append(item)
+print(sublist)
+
+# Question 15: Transpose the matrix [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+print("\nQuestion 15: Transpose the matrix [[1, 2, 3], [4, 5, 6], [7, 8, 9]]")
+
+
+# Question 16: Find the maximum value in each sublist of [[1, 5, 3], [9, 2, 7], [4, 8, 6]]
+print("\nQuestion 16: Find the maximum value in each sublist of [[1, 5, 3], [9, 2, 7], [4, 8, 6]]")
+N=[[1, 5, 3], [9, 2, 7], [4, 8, 6]]
+M=[]
+for i in N:
+    L=max(i)
+    M.append(L)
+print(M)
+
+
+# Question 17: Create a 3D list: [[[1, 2], [3, 4]], [[5, 6], [7, 8]]]
+print("\nQuestion 17: Create a 3D list: [[[1, 2], [3, 4]], [[5, 6], [7, 8]]]")
+N=[[1, 2], [3, 4]]
+M=[[5, 6], [7, 8]]
+thrid_list=(N,M)
+print(thrid_list)
+
+
+# Question 18: Find the sum of all elements in 3D list [[[1, 2], [3, 4]], [[5, 6], [7, 8]]]
+print("\nQuestion 18: Find the sum of all elements in 3D list [[[1, 2], [3, 4]], [[5, 6], [7, 8]]]")
+N=[[[1, 2], [3, 4]], [[5, 6], [7, 8]]]
+M=[]
+for items in N:
+    for item in items:
+        for i in items:
+            M +=i
+print(sum(M))
+        
+
+# Question 19: Extract all even numbers from nested list [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+print("\nQuestion 19: Extract all even numbers from nested list [[1, 2, 3], [4, 5, 6], [7, 8, 9]]")
+N=[[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+even=[]
+for items in N:
+    for item in items:
+           if item%2==0:
+            even.append(item)
+print(even)
+
+# Question 20: Create a list of mixed data types: [1, "hello", 3.14, True, [1, 2, 3]]
+print("\nQuestion 20: Create a list of mixed data types: [1, 'hello', 3.14, True, [1, 2, 3]]")
+mixed_data=[1, 'hello', 3.14, True, [1, 2, 3]]
+print(mixed_data)
+
+
+# Question 21: Find the length of each string in ["apple", "banana", "cherry", "date"]
+print("\nQuestion 21: Find the length of each string in ['apple', 'banana', 'cherry', 'date']")
+N=['apple', 'banana', 'cherry', 'date']
+length=[]
+for i in N:
+    L=len(i)
+    length.append(L)
+print(length)
+
+# Question 22: Create a list of tuples: [(1, 'a'), (2, 'b'), (3, 'c')]
+print("\nQuestion 22: Create a list of tuples: [(1, 'a'), (2, 'b'), (3, 'c')]")
+N=[(1, 'a'), (2, 'b'), (3, 'c')]
+M=tuple(N)
+print(M)
+
+# Question 23: Extract first element from each tuple in [(1, 'a'), (2, 'b'), (3, 'c')]
+print("\nQuestion 23: Extract first element from each tuple in [(1, 'a'), (2, 'b'), (3, 'c')]")
+N=[(1, 'a'), (2, 'b'), (3, 'c')]
+for i in N:
+    print(i[0],end='')
+
+# Question 24: Create a list of dictionaries: [{'name': 'Alice', 'age': 25}, {'name': 'Bob', 'age': 30}]
+print("\nQuestion 24: Create a list of dictionaries: [{'name': 'Alice', 'age': 25}, {'name': 'Bob', 'age': 30}]")
+N=[{'name': 'Alice', 'age': 25}, {'name': 'Bob', 'age': 30}]
+M=dict(N)
+print(M)
+
+# Question 25: Extract all 'name' values from list of dictionaries
+print("\nQuestion 25: Extract all 'name' values from list of dictionaries")
+#N=[{'name': 'Alice', 'age': 25}, {'name': 'Bob', 'age': 30}]
+M='name'
+person=[]
+for i in N:
+    person.append(i['name'])
+print(person)
+
+
+# Question 26: Find the person with maximum age in list of dictionaries
+print("\nQuestion 26: Find the person with maximum age in list of dictionaries")
+L='age'
+for i in N:
+    person.append(i['age'])
+print(person)
+
+
+# Question 27: Create a 4D list: [[[[1, 2], [3, 4]], [[5, 6], [7, 8]]], [[[9, 10], [11, 12]], [[13, 14], [15, 16]]]]
+print("\nQuestion 27: Create a 4D list: [[[[1, 2], [3, 4]], [[5, 6], [7, 8]]], [[[9, 10], [11, 12]], [[13, 14], [15, 16]]]]")
+N=[[[[1, 2], [3, 4]], [[5, 6], [7, 8]]], [[[9, 10], [11, 12]], [[13, 14], [15, 16]]]]
+print(N)
+
+# Question 28: Find the maximum value in 4D list
+print("\nQuestion 28: Find the maximum value in 4D list")
+N=[[[[1, 2], [3, 4]], [[5, 6], [7, 8]]], [[[9, 10], [11, 12]], [[13, 14], [15, 16]]]]
+max=0
+for items in N:
+    for item in items:
+            for i in item:
+                for L in i:
+                    if L > max:
+                     max = L
+print(max)
+
+
+# Question 29: Create a list of sets: [{1, 2, 3}, {4, 5, 6}, {7, 8, 9}]
+print("\nQuestion 29: Create a list of sets: [{1, 2, 3}, {4, 5, 6}, {7, 8, 9}]")
+N=[{1, 2, 3}, {4, 5, 6}, {7, 8, 9}]
+M=list(N)
+print(N)
+
+
+# Question 30: Find the union of all sets in list of sets
+print("\nQuestion 30: Find the union of all sets in list of sets")
+N=[{1, 2, 3}, {4, 5, 6}, {7, 8, 9}]
+M=set.union(*N)
+print(M)
+
+# Question 31: Create a list of complex numbers: [1+2j, 3+4j, 5+6j]
+print("\nQuestion 31: Create a list of complex numbers: [1+2j, 3+4j, 5+6j]")
+N=[1+2j, 3+4j, 5+6j]
+print(N)
+
+# Question 32: Find the magnitude of each complex number in list
+print("\nQuestion 32: Find the magnitude of each complex number in list")
+N=[1+2j, 3+4j, 5+6j]
+magnitude=[]
+for i in N:
+    magnitude.append(i)
+print(i)
+
+# Question 33: Create a nested list with different levels: [1, [2, 3], [4, [5, 6]], 7]
+print("\nQuestion 33: Create a nested list with different levels: [1, [2, 3], [4, [5, 6]], 7]")
+N= [1, [2, 3], [4, [5, 6]], 7]
+print(N)
+
+# Question 34: Count the depth of nesting in [1, [2, 3], [4, [5, 6]], 7]
+print("\nQuestion 34: Count the depth of nesting in [1, [2, 3], [4, [5, 6]], 7]")
+M=range(len(N))
+print(M)
+
+
+# Question 35: Create a list of functions: [len, str, int, float]
+print("\nQuestion 35: Create a list of functions: [len, str, int, float]")
+
+print('hello')
+print('123')
+print('7.891')
+
+
+# Question 36: Apply each function in list to string "123"
+print("\nQuestion 36: Apply each function in list to string '123'")
+print('123')
+result=[]
+
+
+# Question 37: Create a list of lambda functions: [lambda x: x*2, lambda x: x**2, lambda x: x+1]
+print("\nQuestion 37: Create a list of lambda functions: [lambda x: x*2, lambda x: x**2, lambda x: x+1]")
+N=[lambda x: x*2, lambda x: x**2, lambda x: x+1]
+print(N)
+
+# Question 38: Apply each lambda function to 5
+print("\nQuestion 38: Apply each lambda function to 5")
+N=[lambda x: x*2, lambda x: x**2, lambda x: x+1]
+function=[N]
+for i in N:
+    if i in range(5):
+        function.append(i)
+print(function)
+
+# Question 39: Create a list of classes: [list, dict, set, tuple]
+print("\nQuestion 39: Create a list of classes: [list, dict, set, tuple]")
+print("{1,2,3}","manoj","(123)","('a','b','c')")
+
+# Question 40: Create instances of each class in list
+print("\nQuestion 40: Create instances of each class in list")
+# Your code here
+
+# Question 41: Create a list of None values: [None, None, None, None]
+print("\nQuestion 41: Create a list of None values: [None, None, None, None]")
+N=[None, None, None, None]
+M=list(N)
+print(M)
+
+# Question 42: Replace all None values with 0 in list
+print("\nQuestion 42: Replace all None values with 0 in list")
+for i in range(len(N)):
+    if N[i] is 'none':
+        N[i]=0
+print(N[i])
+
+
+# Question 43: Create a list of boolean values: [True, False, True, False]
+print("\nQuestion 43: Create a list of boolean values: [True, False, True, False]")
+N=[True, False, True, False]
+M=list(N)
+print(M)
+
+# Question 44: Count True values in boolean list
+print("\nQuestion 44: Count True values in boolean list")
+M=0
+for i in N:
+   if i=='true':
+       count +=1
+print(i)
+
+
+# Question 45: Create a list of ranges: [range(3), range(5), range(2)]
+print("\nQuestion 45: Create a list of ranges: [range(3), range(5), range(2)]")
+N=[range(3), range(5), range(2)]
+M=list(N)
+print(M)
+
+# Question 46: Convert each range to list
+print("\nQuestion 46: Convert each range to list")
+
+# Question 47: Create a list of generators: [(x for x in range(3)), (x for x in range(5))]
+print("\nQuestion 47: Create a list of generators: [(x for x in range(3)), (x for x in range(5))]")
+N=[(x for x in range(3)), (x for x in range(5))]
+M=list(N)
+print(M)
+
+# Question 48: Convert each generator to list
+print("\nQuestion 48: Convert each generator to list")
+# Your code here
+
+# Question 49: Create a list of iterators: [iter([1, 2, 3]), iter([4, 5, 6])]
+print("\nQuestion 49: Create a list of iterators: [iter([1, 2, 3]), iter([4, 5, 6])]")
+N=[iter([1, 2, 3]), iter([4, 5, 6])]
+M=list(N)
+print(M)
+
+# Question 50: Extract all elements from each iterator
+print("\nQuestion 50: Extract all elements from each iterator")
+# Your code here 
